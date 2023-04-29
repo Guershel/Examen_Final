@@ -1,0 +1,33 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Menuprincipal.master.cs" Inherits="Examen_Guershel_Portuguez_Wong.Menuprincipal" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link href="menu.css" rel="stylesheet" />
+        <link href="BotonesCss.css" rel="stylesheet" />
+
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <ul>
+  <li><a class="active" href="inicio.aspx">Inicio</a></li>
+  <li><a href="#">Reportes</a></li>
+                <li><a href="ReporteUsuario.aspx">Reportes Usuarios</a></li>
+                <li><a href="ReporteMascotas.aspx">Reportes Reporte Mascotas</a></li>
+                <li><a href="ReporteCitas.aspx">Reportes Citas</a></li>
+  <li><a href="#Salir.aspx">Salir</a></li>
+</ul>
+        </div>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
